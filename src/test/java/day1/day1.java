@@ -6,17 +6,12 @@ import io.restassured.response.Response;
 import org.junit.jupiter.api.Assertions;
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
+import utility.ApiTestBase;
 
 import java.util.HashMap;
 import java.util.Map;
 
-public class day1 {
-
-
-    @BeforeEach
-            public void init(){
-      RestAssured.baseURI = "http://3.91.231.36:8000";
-    }
+public class day1 extends ApiTestBase {
 
     String url = "http://3.91.231.36:8000/api/spartans";
 
